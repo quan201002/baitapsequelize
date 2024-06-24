@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.10.0",
+    "sequelize": "^6.37.3",
+    "sequelize-auto": "^0.8.8",
+    "yarn": "^1.22.22"
+  },
+  "name": "baitapsequelize",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node --env-file=.env --watch src/index.js"
+  },
+  "type": "module"
+}

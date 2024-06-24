@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "67b0d259-3a35-40cd-bd96-d9ba0c21cf17",
+		"name": "baitap_sequelize_app_food",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32240800"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"20\",\r\n    \"res_id\":\"22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/like",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"like"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"like_id\":\"200\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/unlike",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"unlike"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/user/like-list",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"like-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"16\",\r\n    \"res_id\":\"12\",\r\n    \"amount\":\"55\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/add-rate",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"add-rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{domain}}/user/rate-list",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"rate-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"10\",\r\n    \"food_id\":\"1\",\r\n    \"amount\":\"2\",\r\n    \"code\":\"gq34w\",\r\n    \"arr_sub_id\":\"qusnfskzkc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/user/order",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "domain",
+			"value": "localhost:8080",
+			"type": "string"
+		}
+	]
+}
